@@ -67,9 +67,9 @@ android {
 
             File propFile = file('sign.properties');
             def Properties props = new Properties()
-            props.load(new FileInputStream(propFile))
-            buildConfigField "String", "APPLICATIONID", props['APPLICATIONID']
-            buildConfigField "String", "CLIENTKEY", props['CLIENTKEY']
+            //props.load(new FileInputStream(propFile))
+//            buildConfigField "String", "APPLICATIONID", props['APPLICATIONID']
+//            buildConfigField "String", "CLIENTKEY", props['CLIENTKEY']
 
             debuggable true
             minifyEnabled false
@@ -84,9 +84,9 @@ android {
 
             File propFile = file('sign.properties');
             def Properties props = new Properties()
-            props.load(new FileInputStream(propFile))
-            buildConfigField "String", "APPLICATIONID", props['APPLICATIONID']
-            buildConfigField "String", "CLIENTKEY", props['CLIENTKEY']
+//            props.load(new FileInputStream(propFile))
+//            buildConfigField "String", "APPLICATIONID", props['APPLICATIONID']
+//            buildConfigField "String", "CLIENTKEY", props['CLIENTKEY']
 
 
             debuggable false

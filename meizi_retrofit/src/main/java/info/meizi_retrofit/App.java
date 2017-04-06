@@ -18,7 +18,8 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         mContext = getApplicationContext();
-        AVOSCloud.initialize(this, BuildConfig.APPLICATIONID, BuildConfig.CLIENTKEY);
+//        AVOSCloud.initialize(this, BuildConfig.APPLICATIONID, BuildConfig.CLIENTKEY);
+        AVOSCloud.initialize(this, BuildConfig.APPLICATION_ID, BuildConfig.BUILD_TYPE);
         RealmConfiguration myConfig = new RealmConfiguration.Builder(getContext())
                 .name("Realm")
                 .schemaVersion(2)
